@@ -1,11 +1,23 @@
 
 
 const About = () => {
-  return (
-    <div>
-      <h1 className='text-4xl'>About</h1>
+  return <>
+    <div className="flex flex-wrap gap-2 sm: gap-x-6 items-center justify-center">
+      <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">
+        We love
+      </h1>
+      <div className="stats bg-primary shadow">
+        <div className="stat">
+          <div className="state-title text-primary-content text-4xl font-bold tracking-widest">
+            comfy
+          </div>
+        </div>
+      </div>
     </div>
-  )
+    <p className="mt-6 text-lg leading-8 max-w-2xl mx-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam enim, temporibus dolores debitis numquam explicabo eius harum tempora facere. Neque, quasi necessitatibus. Quae quod dolores cumque ab nisi quia id suscipit aliquid at temporibus ea facilis voluptates, ullam provident?
+    </p>
+  </>
 }
 
 export default About
