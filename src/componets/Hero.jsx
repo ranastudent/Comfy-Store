@@ -24,7 +24,7 @@ const Hero = () => {
         }
         return prev + direction;
       });
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [direction]);
@@ -49,10 +49,10 @@ const Hero = () => {
       </div>
 
       {/* Right Section - Auto-Sliding Carousel with Reversing Effect */}
-      <div className='hidden lg:block w-full overflow-hidden'>
+      <div className=' w-full overflow-hidden'>
         <div className='relative w-full h-[28rem] bg-neutral rounded-box'>
           <div
-            className='absolute top-0 left-0 h-full flex transition-transform duration-1000 ease-in-out'
+            className='absolute top-0 left-0 h-full flex transition-transform duration-3000 ease-in-out'
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {carouselImages.map((image, index) => (
